@@ -4,7 +4,7 @@ import (
 	"sync"
 
 	"github.com/pkg/errors"
-	"github.com/planxnx/ethereum-wallet-generator/wallets"
+	"github.com/rubleprotocol/ethereum-wallet-generator/wallets"
 	"gorm.io/gorm"
 )
 

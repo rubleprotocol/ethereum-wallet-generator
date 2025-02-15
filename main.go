@@ -15,11 +15,11 @@ import (
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 
-	"github.com/planxnx/ethereum-wallet-generator/internal/generators"
-	"github.com/planxnx/ethereum-wallet-generator/internal/progressbar"
-	"github.com/planxnx/ethereum-wallet-generator/internal/repository"
-	"github.com/planxnx/ethereum-wallet-generator/utils"
-	"github.com/planxnx/ethereum-wallet-generator/wallets"
+	"github.com/rubleprotocol/ethereum-wallet-generator/internal/generators"
+	"github.com/rubleprotocol/ethereum-wallet-generator/internal/progressbar"
+	"github.com/rubleprotocol/ethereum-wallet-generator/internal/repository"
+	"github.com/rubleprotocol/ethereum-wallet-generator/utils"
+	"github.com/rubleprotocol/ethereum-wallet-generator/wallets"
 )
 
 func init() {
@@ -153,7 +153,7 @@ func main() {
 	case 2:
 		walletGenerator = wallets.NewGeneratorPrivatekey()
 	default:
-		panic("Invalid mode. See: https://github.com/Planxnx/ethereum-wallet-generator#Modes")
+		panic("Invalid mode. See: https://github.com/rubleprotocol/ethereum-wallet-generator#Modes")
 	}
 
 	generator := generators.New(

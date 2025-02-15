@@ -1,4 +1,4 @@
-module github.com/planxnx/ethereum-wallet-generator
+module github.com/rubleprotocol/ethereum-wallet-generator
 
 go 1.21
 

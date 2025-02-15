@@ -1,6 +1,6 @@
 package repository
 
-import "github.com/planxnx/ethereum-wallet-generator/wallets"
+import "github.com/rubleprotocol/ethereum-wallet-generator/wallets"
 
 type Repository interface {
 	Insert(wallet *wallets.Wallet) error

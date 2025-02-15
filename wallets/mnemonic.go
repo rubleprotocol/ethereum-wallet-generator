@@ -7,7 +7,7 @@ import (
 	"github.com/btcsuite/btcd/chaincfg"
 	"github.com/ethereum/go-ethereum/accounts"
 	"github.com/pkg/errors"
-	"github.com/planxnx/ethereum-wallet-generator/bip39"
+	"github.com/rubleprotocol/ethereum-wallet-generator/bip39"
 )
 
 var (

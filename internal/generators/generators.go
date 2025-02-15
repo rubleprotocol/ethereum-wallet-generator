@@ -8,9 +8,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/planxnx/ethereum-wallet-generator/internal/progressbar"
-	"github.com/planxnx/ethereum-wallet-generator/internal/repository"
-	"github.com/planxnx/ethereum-wallet-generator/wallets"
+	"github.com/rubleprotocol/ethereum-wallet-generator/internal/progressbar"
+	"github.com/rubleprotocol/ethereum-wallet-generator/internal/repository"
+	"github.com/rubleprotocol/ethereum-wallet-generator/wallets"
 )
 
 type Config struct {
@@ -80,7 +80,7 @@ func (g *Generator) Start() (err error) {
 		fmt.Printf("\nResolved Speed: %.2f w/s\n", float64(resolvedCount.Load())/time.Since(start).Seconds())
 		fmt.Printf("Total Duration: %v\n", time.Since(start))
 		fmt.Printf("Total Wallet Resolved: %d w\n", resolvedCount.Load())
-		fmt.Printf("\nCopyright (C) 2023 Planxnx <planxthanee@gmail.com>\n")
+		fmt.Printf("\nCopyright (C) 2023 rubleprotocol <planxthanee@gmail.com>\n")
 
 		g.isShutdown.Store(true)
 	}()

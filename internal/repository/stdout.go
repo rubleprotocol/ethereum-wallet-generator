@@ -3,7 +3,7 @@ package repository
 import (
 	"sync"
 
-	"github.com/planxnx/ethereum-wallet-generator/wallets"
+	"github.com/rubleprotocol/ethereum-wallet-generator/wallets"
 )
 
 type InMemoryRepository struct {
